@@ -51,94 +51,101 @@ Este projeto é uma aplicação Java desenvolvida com Spring Boot, utilizando JP
 ## Diagrama:
 ![java](https://github.com/user-attachments/assets/60264022-3a21-435c-8b27-997127e997cf)
 
-##Teste
+# Sistema de Gerenciamento de Médicos e Pacientes
 
-Médicos
-1. Criar um novo médico (POST)
+## Teste
 
-URL: http://localhost:8080/medicos/salvar
-Método: POST
-Headers: Content-Type: application/json
-Body (JSON):
+### Médicos
 
-jsonCopiar{
+#### 1. Criar um novo médico (POST)
+- **URL:** `http://localhost:8080/medicos/salvar`
+- **Método:** POST
+- **Headers:** Content-Type: application/json
+- **Body (JSON):**
+```json
+{
   "nome": "Dr. João Silva",
   "email": "joao.silva@example.com",
   "crm": "123456",
   "telefone": "11999998888"
 }
-2. Listar todos os médicos (GET)
+```
 
-URL: http://localhost:8080/medicos
-Método: GET
+#### 2. Listar todos os médicos (GET)
+- **URL:** `http://localhost:8080/medicos`
+- **Método:** GET
 
-3. Buscar médico por ID (GET)
+#### 3. Buscar médico por ID (GET)
+- **URL:** `http://localhost:8080/medicos/{id}`
+- **Exemplo:** `http://localhost:8080/medicos/1`
+- **Método:** GET
 
-URL: http://localhost:8080/medicos/{id}
-Exemplo: http://localhost:8080/medicos/1
-Método: GET
-
-4. Atualizar médico (PUT)
-
-URL: http://localhost:8080/medicos/editar/{id}
-Exemplo: http://localhost:8080/medicos/editar/1
-Método: PUT
-Headers: Content-Type: application/json
-Body (JSON):
-
-jsonCopiar{
+#### 4. Atualizar médico (PUT)
+- **URL:** `http://localhost:8080/medicos/editar/{id}`
+- **Exemplo:** `http://localhost:8080/medicos/editar/1`
+- **Método:** PUT
+- **Headers:** Content-Type: application/json
+- **Body (JSON):**
+```json
+{
   "id": 1,
   "nome": "Dr. João Silva Modificado",
   "email": "joao.novo@example.com",
   "crm": "654321",
   "telefone": "11988887777"
 }
-5. Excluir médico (DELETE)
+```
 
-URL: http://localhost:8080/medicos/excluir/{id}
-Exemplo: http://localhost:8080/medicos/excluir/1
-Método: DELETE
+#### 5. Excluir médico (DELETE)
+- **URL:** `http://localhost:8080/medicos/excluir/{id}`
+- **Exemplo:** `http://localhost:8080/medicos/excluir/1`
+- **Método:** DELETE
 
-Pacientes
-1. Criar um novo paciente (POST)
+### Pacientes
 
-URL: http://localhost:8080/pacientes/salvar
-Método: POST
-Headers: Content-Type: application/json
-Body (JSON):
-
-jsonCopiar{
+#### 1. Criar um novo paciente (POST)
+- **URL:** `http://localhost:8080/pacientes/salvar`
+- **Método:** POST
+- **Headers:** Content-Type: application/json
+- **Body (JSON):**
+```json
+{
   "nome": "Maria Souza",
   "email": "maria.souza@example.com",
   "telefone": "11997776666",
   "dataDeNascimento": "1990-05-20"
 }
-2. Listar todos os pacientes (GET)
+```
 
-URL: http://localhost:8080/pacientes
-Método: GET
+#### 2. Listar todos os pacientes (GET)
+- **URL:** `http://localhost:8080/pacientes`
+- **Método:** GET
 
-3. Buscar paciente por ID (GET)
+#### 3. Buscar paciente por ID (GET)
+- **URL:** `http://localhost:8080/pacientes/{id}`
+- **Exemplo:** `http://localhost:8080/pacientes/1`
+- **Método:** GET
 
-URL: http://localhost:8080/pacientes/{id}
-Exemplo: http://localhost:8080/pacientes/1
-Método: GET
-
-4. Atualizar paciente (PUT)
-
-URL: http://localhost:8080/pacientes/editar/{id}
-Exemplo: http://localhost:8080/pacientes/editar/1
-Método: PUT
-Headers: Content-Type: application/json
-Body (JSON):
-
-jsonCopiar{
+#### 4. Atualizar paciente (PUT)
+- **URL:** `http://localhost:8080/pacientes/editar/{id}`
+- **Exemplo:** `http://localhost:8080/pacientes/editar/1`
+- **Método:** PUT
+- **Headers:** Content-Type: application/json
+- **Body (JSON):**
+```json
+{
   "id": 1,
   "nome": "Maria Souza Modificada",
   "email": "maria.nova@example.com",
   "telefone": "11996665555",
   "dataDeNascimento": "1990-05-20"
 }
+```
+
+#### 5. Excluir paciente (DELETE)
+- **URL:** `http://localhost:8080/pacientes/excluir/{id}`
+- **Exemplo:** `http://localhost:8080/pacientes/excluir/1`
+- **Método:** DELETE
    
 
 
