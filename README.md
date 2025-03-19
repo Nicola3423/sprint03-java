@@ -48,7 +48,9 @@ Este projeto é uma aplicação Java desenvolvida com Spring Boot, utilizando JP
 - *Jakarta Persistence API (JPA)*
 - *Banco de Dados Relacional ORACLE *
 
-  
+## Diagrama:
+![java](https://github.com/user-attachments/assets/60264022-3a21-435c-8b27-997127e997cf)
+
 ## Instalação e Configuração
 
 1. Clone o repositório:
