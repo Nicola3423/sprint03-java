@@ -1,5 +1,7 @@
 # Projeto CP03 - Gerenciamento de Pacientes
 
+## Video: https://www.youtube.com/watch?v=tukYhAb0dA0
+
 ## Integrantes do Grupo
 
 *Nicola Monte Cravo Garofalo - responsável pelo código fonte.*
